@@ -50,12 +50,12 @@ public class User {
     @JoinColumn(name = "role_id", nullable = false)
     private Role role;
 
-    @NotNull
+
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "organization_id", nullable = false)
     private Organization organization;
 
-    @NotNull
+
     @ManyToOne(fetch = FetchType.EAGER, optional = false)
     @JoinColumn(name = "qualification_id", nullable = false)
     private Qualification qualification;
